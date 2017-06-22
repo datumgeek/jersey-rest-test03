@@ -20,3 +20,6 @@
 
 #### Unzip Maven to c:\dev\tools
 
+### Visit the [Oracle Java SE JDK Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and Download Java SE JDK 8
+
+![image](https://user-images.githubusercontent.com/22680176/27460614-57518f7e-5772-11e7-8a23-3df2506e6250.png)
