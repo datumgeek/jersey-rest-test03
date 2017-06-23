@@ -167,3 +167,29 @@ In our simple case, we allow everything, but we can modify this class for fine-g
 
 ![image](https://user-images.githubusercontent.com/22680176/27502729-8b1badfa-5833-11e7-9394-8b345763165b.png)
 
+Pretty amazing - we can use tooling to generate our TypeScript proxy classes when consuming our web api in Angular2+.  
+
+### Next we'll take a look at how we use this proxy for our web api from the Angular2+ client.
+
+To facilitate a tight modify-view-debug loop, we'll first ***implement CORS support*** in our web api.  This will allow us to run the angular client separately so we don't have to redeploy to Tomcat every time we make a change.  In fact, our changes will be picked up live in the browser when we use the angular cli "serve" command to run our angular2+ web app.
+
+CORS allows a web app served from one URL to access a web service at another URL.  The required support is implemented in the web service.
+
+#### We'll create a servlet filter as shown here.
+
+This filter adds headers to all responses allowing callers from different origins to call our web api
+
+![image](https://user-images.githubusercontent.com/22680176/27502836-4ee14074-5834-11e7-999c-f293192a131a.png)
+
+#### Next, we'll add the above filter to the "web.xml"
+
+![image](https://user-images.githubusercontent.com/22680176/27502866-79a81576-5834-11e7-893b-b723d3143583.png)
+
+With CORS support in place for our web api, we ready to start accessing the web service from the angular client served up by the angular cli.  
+
+#### We grab the path to the angular client folder in our web app.
+
+Right click the "spa" folder and copy its path.
+
+![image](https://user-images.githubusercontent.com/22680176/27502893-affe106c-5834-11e7-8f29-101fdc30640f.png)
+
