@@ -125,8 +125,9 @@ npm install -g @angular/cli
 
 ![image](https://user-images.githubusercontent.com/22680176/27462340-4e4fc926-577d-11e7-93f4-7acacc36caf8.png)
 
-#### It works !!!!!!!!! :smile: :rabbit2: :top_hat:
+#### It works !!!!!!!!! :smile: :rabbit2: :tophat:
 
 ![image](https://user-images.githubusercontent.com/22680176/27462353-76d1cb56-577d-11e7-98bf-cbe84977f37f.png)
 
 ![image](https://user-images.githubusercontent.com/22680176/27462362-913474c6-577d-11e7-9412-7bb8dbda2347.png)
+
