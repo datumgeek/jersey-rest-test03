@@ -50,3 +50,32 @@ Right click the project and choose "Add Framework Support…", then choose "Mave
 
 ![image](https://user-images.githubusercontent.com/22680176/27461813-9c6fcf74-5779-11e7-8f07-6669baf85949.png)
 
+![image](https://user-images.githubusercontent.com/22680176/27461865-e8cc2336-5779-11e7-9591-e56d592300f1.png)
+
+![image](https://user-images.githubusercontent.com/22680176/27461879-009eb44c-577a-11e7-8782-2322fc217a02.png)
+
+### Edit the "pom.xml" file: set the groupId and add the Jersey dependencies
+
+![image](https://user-images.githubusercontent.com/22680176/27461909-3d43d2a6-577a-11e7-8de1-69ecf4cf4460.png)
+
+![image](https://user-images.githubusercontent.com/22680176/27461935-59cb331a-577a-11e7-8f86-01bb39952848.png)
+
+### Add "com.technicalmedia" package and "MyResource.java" class:
+
+> * Right click "src/main/java", 
+> * choose add package, 
+> * enter "com.technicalmedia", 
+> * then right click the "src/main/java/com.technicalmedia" and 
+> * choose "Add - Java Class" and 
+> * enter "MyResource" (edit this file as follows):
+
+![image](https://user-images.githubusercontent.com/22680176/27461975-a0d6d660-577a-11e7-9694-e41aeeb2c346.png)
+
+### Modify the "index.jsp" file in the "web" folder to link to the REST API.
+
+![image](https://user-images.githubusercontent.com/22680176/27461998-c9b5502a-577a-11e7-9302-7cd5a0fe21fb.png)
+
+### Modify the "web.xml" file in "web/WEB-INF" folder.
+
+![image](https://user-images.githubusercontent.com/22680176/27462011-ec696b74-577a-11e7-85fb-ea4e2e7b7790.png)
+
