@@ -79,3 +79,54 @@ Right click the project and choose "Add Framework Support…", then choose "Mave
 
 ![image](https://user-images.githubusercontent.com/22680176/27462011-ec696b74-577a-11e7-85fb-ea4e2e7b7790.png)
 
+### Add the jersey jars to the "WEB-INF/lib" folder.  
+
+> * Choose the "File - Project Structure…" menu, 
+> * select the jars as shown, 
+> * right click, and 
+> * choose the "Put into /WEB-INF/lib" option
+
+![image](https://user-images.githubusercontent.com/22680176/27462084-7af9d234-577b-11e7-843d-a5d062422198.png)
+
+### Add an Angular4 bundled project using the angular cli.
+
+#### Get the path to our "src/main"
+
+![image](https://user-images.githubusercontent.com/22680176/27462151-d7262396-577b-11e7-91fe-4ae7ccd63cf8.png)
+
+#### And now from a bash shell, we create the new angular project.
+
+> If you haven't done so already, install the following:
+> * http://nodejs.org
+> * On windows: git for windows: https://git-scm.com/download/win
+> * On windows: ConEmu: https://conemu.github.io/
+
+```bash
+npm install -g @angular/cli
+```
+
+![image](https://user-images.githubusercontent.com/22680176/27462197-2abf46ae-577c-11e7-914c-352080767a0c.png)
+
+#### View the results in the IDE
+
+![image](https://user-images.githubusercontent.com/22680176/27462265-b8ecc87a-577c-11e7-9f96-8534ddd56250.png)
+
+#### Build the Angular bundle
+
+![image](https://user-images.githubusercontent.com/22680176/27462295-eecb3a1c-577c-11e7-9fdd-19bd70c722b3.png)
+
+#### Notice the newly-created "dist" folder
+
+![image](https://user-images.githubusercontent.com/22680176/27462307-0ebff01a-577d-11e7-95ad-dacb44387b91.png)
+
+#### Now add the Angular bundle to the project output
+
+![image](https://user-images.githubusercontent.com/22680176/27462329-35d01cde-577d-11e7-951c-032cd17ee448.png)
+
+![image](https://user-images.githubusercontent.com/22680176/27462340-4e4fc926-577d-11e7-93f4-7acacc36caf8.png)
+
+#### It works !!!!!!!!! :smile: :rabbit2: :top_hat:
+
+![image](https://user-images.githubusercontent.com/22680176/27462353-76d1cb56-577d-11e7-98bf-cbe84977f37f.png)
+
+![image](https://user-images.githubusercontent.com/22680176/27462362-913474c6-577d-11e7-9412-7bb8dbda2347.png)
