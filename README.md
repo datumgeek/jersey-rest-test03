@@ -131,3 +131,39 @@ npm install -g @angular/cli
 
 ![image](https://user-images.githubusercontent.com/22680176/27462362-913474c6-577d-11e7-9412-7bb8dbda2347.png)
 
+### Now to get the [Swagger core](https://github.com/swagger-api/swagger-core) stuff implemented
+
+This will provide a URL in our web app that will return a `swagger.json` file describing our web api.  This file is generated using reflection over the project's resources.  This means if we add methods to a resource or change the POJOs returned from a method, those changes will automatically be picked up and reflected in the `swagger.json`.
+
+#### The First step is to modify the "pom.xml" file to bring in the swagger core for jersey2
+
+![image](https://user-images.githubusercontent.com/22680176/27502568-2300cc2e-5832-11e7-9557-e678a399ee08.png)
+
+#### Modify the "web.xml" file to include the swagger listing package and to run the swagger bootstrap class that configures the swagger settings
+
+![image](https://user-images.githubusercontent.com/22680176/27502590-5dbdb93a-5832-11e7-9a2f-8240d04b37cc.png)
+
+#### Here is the swagger bootstrap servlet that configures the swagger settings:
+
+![image](https://user-images.githubusercontent.com/22680176/27502628-b57ad270-5832-11e7-936c-9a6124d659cf.png)
+
+#### Here is the filter set in the swagger bootstrap class.
+
+In our simple case, we allow everything, but we can modify this class for fine-grained security control over our web api.
+
+![image](https://user-images.githubusercontent.com/22680176/27502658-ee1c2b2e-5832-11e7-8861-b548c246663c.png)
+
+#### Here is our sophisticated web api resource.  For fun, it has been switched to return JSON
+
+![image](https://user-images.githubusercontent.com/22680176/27502674-1530690a-5833-11e7-97a6-900d10953f2b.png)
+
+#### And the spectacular results of running it
+
+![image](https://user-images.githubusercontent.com/22680176/27502689-391ea7a0-5833-11e7-8fc8-3f0c6a8edf3f.png)
+
+![image](https://user-images.githubusercontent.com/22680176/27502695-4ded21b6-5833-11e7-8e97-08f4173088a0.png)
+
+#### Now we can use [NSwag Studio](https://github.com/NSwag/NSwag/wiki/NSwagStudio) to generate a matching TypeScript Angular2+ Proxy for our web api
+
+![image](https://user-images.githubusercontent.com/22680176/27502729-8b1badfa-5833-11e7-9394-8b345763165b.png)
+
