@@ -29,3 +29,24 @@
 ### Add Maven bin and JDK bin folders to the Path environment variable
 
 ![image](https://user-images.githubusercontent.com/22680176/27460905-1fefe29a-5774-11e7-9178-84ae2f5888df.png)
+
+### Open IntelliJ IDEA and Choose "File - New Project"
+
+When creating the project (you'll only have to do this the first time), create a new application server and choose Tomcat Server, then enter the unzipped folder location (C:\dev\tools\apache-tomcat-8.5.15)
+
+![image](https://user-images.githubusercontent.com/22680176/27461694-c80c9cf8-5778-11e7-8bf4-efe5c70aaa87.png)
+
+#### In the "New Project" dialog, Choose Java Enterprise and check Web Application and Restful Web Service
+
+![image](https://user-images.githubusercontent.com/22680176/27461753-3572f292-5779-11e7-993d-c83dc590cdea.png)
+
+#### Give the project a fun and creative name
+
+![image](https://user-images.githubusercontent.com/22680176/27461788-64cae860-5779-11e7-87f5-3e3239d14965.png)
+
+### Add support for Maven
+
+Right click the project and choose "Add Framework Support…", then choose "Maven" in the dialog and click "Ok".  Then in the small popup in the lower right,  choose "Enable Auto Import".
+
+![image](https://user-images.githubusercontent.com/22680176/27461813-9c6fcf74-5779-11e7-8f07-6669baf85949.png)
+
