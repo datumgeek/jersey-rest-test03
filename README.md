@@ -23,3 +23,9 @@
 ### Visit the [Oracle Java SE JDK Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and Download Java SE JDK 8
 
 ![image](https://user-images.githubusercontent.com/22680176/27460614-57518f7e-5772-11e7-8a23-3df2506e6250.png)
+
+#### The install placed the files here (for me): `C:\Program Files\Java\jdk1.8.0_131`
+
+### Add Maven bin and JDK bin folders to the Path environment variable
+
+![image](https://user-images.githubusercontent.com/22680176/27460905-1fefe29a-5774-11e7-9178-84ae2f5888df.png)
