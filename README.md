@@ -271,5 +271,6 @@ Copy them to the `src/main/swagger` folder.
 
 ![image](https://user-images.githubusercontent.com/22680176/27507685-5eed70a2-5891-11e7-9dbd-1ccdfe09d694.png)
 
+#### And finally, add a link to the resulting web address.
 
-
+![image](https://user-images.githubusercontent.com/22680176/27507832-18bb97cc-5895-11e7-8e73-58a44858621b.png)
