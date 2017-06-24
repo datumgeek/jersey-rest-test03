@@ -185,7 +185,7 @@ This filter adds headers to all responses allowing callers from different origin
 
 ![image](https://user-images.githubusercontent.com/22680176/27502866-79a81576-5834-11e7-893b-b723d3143583.png)
 
-With CORS support in place for our web api, we ready to start accessing the web service from the angular client served up by the angular cli.  
+With CORS support in place for our web api, we are ready to start accessing the web service from the angular client served up by the angular cli.  
 
 #### We grab the path to the angular client folder in our web app.
 
@@ -193,3 +193,57 @@ Right click the "spa" folder and copy its path.
 
 ![image](https://user-images.githubusercontent.com/22680176/27502893-affe106c-5834-11e7-8f29-101fdc30640f.png)
 
+#### Bring up a bash shell, change to the folder, and start the angular cli web server using the angular cli "serve" command
+
+![image](https://user-images.githubusercontent.com/22680176/27507127-259fca30-5886-11e7-8e5f-9d050b3a4f67.png)
+
+#### Point the browser at http://localhost:4200 (the URL shown when running `ng serve`)
+
+We see the default angular application created by the angular cli "new" command, but this time it is served by the angular cli instead of our web service.  The advantage of this approach is we can instantly see our angular client code changes updated live in the browser.
+
+![image](https://user-images.githubusercontent.com/22680176/27507153-ab70a9cc-5886-11e7-8536-cf23d8cc3113.png)
+
+#### Now run NSwag Studio, pointing it at our swagger.json URL
+
+From the (way) above NSwag Studio work, we modified the project settings to generate the Angular client code and place it in the "./spa/src/app" folder.  Here are those settings in NSwag Studio:
+
+![image](https://user-images.githubusercontent.com/22680176/27507172-078182f4-5887-11e7-9bb4-838aefda55f1.png)
+
+Now we can use the generated TypeScript web api proxy.  We will modify the angular web app to call our web api and show the results.
+
+#### Here is the project structure showing the generated "api-client.ts" file
+
+![image](https://user-images.githubusercontent.com/22680176/27507185-3f71e92e-5887-11e7-9aa1-a70793461cc6.png)
+
+#### Register the "Client" class (from the "api-client.ts" file) as a "provider" with our "app.module".
+
+This will allow us to use angular2+ dependency injection to create an instance of the generated TypeScript proxy class ("Client") for our web api.
+
+![image](https://user-images.githubusercontent.com/22680176/27507221-c6188a28-5887-11e7-8901-4cb592c28422.png)
+
+#### Now we modify our app's view model (the "app.component" class)
+
+In the constructor, we create a private member variable in our view model class that points to the injected Client proxy class.
+
+Then we use the proxy to invoke an asynchronous call to our web api "" method.  The proxy returns an [RxJS observable]() which we subscribe to, passing a lambda function that will be called with the result of the method.  This result is the data returned by our web api.  All of the underlying http call mechanism and the JSON to TypeScript deserialization is encapsulated in the generated proxy class.  Pretty sweet :)
+
+![image](https://user-images.githubusercontent.com/22680176/27507225-df775602-5887-11e7-901a-c8493d41a229.png)
+
+#### And then we modify the app's view (html template)
+
+In the HTML we are using angular2+ binding syntax to display the JSON data that was returned by our web api.  We are using the angular2+ JSON pipe to convert the JSON object to HTML for display.
+
+![image](https://user-images.githubusercontent.com/22680176/27507292-1ad4aeba-5889-11e7-80a6-cb535a875614.png)
+
+#### In the browser we can see the results.
+
+![image](https://user-images.githubusercontent.com/22680176/27507299-607c5e86-5889-11e7-8a2f-a6cd7359078d.png)
+
+#### We can setup our work environment, splitting the screen
+
+This way, when we save the angular app's files, we can see the browser automatically refresh.s
+
+
+![image](https://user-images.githubusercontent.com/22680176/27507225-df775602-5887-11e7-901a-c8493d41a229.png)
+
+#### ![image](https://user-images.githubusercontent.com/22680176/27507235-048aedaa-5888-11e7-8a6d-4d3d5866269e.png)
