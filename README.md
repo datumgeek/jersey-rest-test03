@@ -274,3 +274,9 @@ Copy them to the `src/main/swagger` folder.
 #### And finally, add a link to the resulting web address.
 
 ![image](https://user-images.githubusercontent.com/22680176/27507832-18bb97cc-5895-11e7-8e73-58a44858621b.png)
+
+## Swagger Plugin for IntelliJ IDEA
+
+https://plugins.jetbrains.com/plugin/8347-swagger-plugin
+
+Using the plugin, we can create an API spec and then use the swagger codegen to create our web api.
