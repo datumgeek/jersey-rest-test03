@@ -1,5 +1,7 @@
 # Java Jersey REST Swagger Angular4+ Recipe
 
+### See Also: [Generating REST web api service from api.yaml using maven plugin](https://github.com/datumgeek/swagger-codegen-test01#swagger-codegen-test01)
+
 ### Visit the JetBrains Website and [Download IntelliJ IDEA Eval - for windows in my case](https://www.jetbrains.com/idea/download/#section=windows)
 
 ![image](https://user-images.githubusercontent.com/22680176/27458859-65b38d74-5768-11e7-8803-4aff595c5610.png)
