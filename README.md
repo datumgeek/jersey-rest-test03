@@ -1,5 +1,7 @@
 # Java Jersey REST Swagger Angular4+ Recipe
 
+### See Also: [Generating REST web api service from api.yaml using maven plugin](https://github.com/datumgeek/swagger-codegen-test01#swagger-codegen-test01)
+
 ### Visit the JetBrains Website and [Download IntelliJ IDEA Eval - for windows in my case](https://www.jetbrains.com/idea/download/#section=windows)
 
 ![image](https://user-images.githubusercontent.com/22680176/27458859-65b38d74-5768-11e7-8803-4aff595c5610.png)
@@ -274,3 +276,9 @@ Copy them to the `src/main/swagger` folder.
 #### And finally, add a link to the resulting web address.
 
 ![image](https://user-images.githubusercontent.com/22680176/27507832-18bb97cc-5895-11e7-8e73-58a44858621b.png)
+
+## Swagger Plugin for IntelliJ IDEA
+
+https://plugins.jetbrains.com/plugin/8347-swagger-plugin
+
+Using the plugin, we can create an API spec and then use the swagger codegen to create our web api.
