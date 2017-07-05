@@ -1,0 +1,39 @@
+﻿{
+  "swaggerGenerator": {
+    "fromSwagger": {
+      "json": "{\r\n  \"swagger\": \"2.0\",\r\n  \"info\": {\r\n    \"description\": \"ah, the struggles !! :) :)\",\r\n    \"version\": \"1.0.2\",\r\n    \"title\": \"API Howto\"\r\n  },\r\n  \"host\": \"localhost:8080\",\r\n  \"basePath\": \"/rest\",\r\n  \"tags\": [\r\n    {\r\n      \"name\": \"myresource\"\r\n    }\r\n  ],\r\n  \"schemes\": [\r\n    \"http\"\r\n  ],\r\n  \"paths\": {\r\n    \"/myresource\": {\r\n      \"get\": {\r\n        \"tags\": [\r\n          \"myresource\"\r\n        ],\r\n        \"operationId\": \"getIt\",\r\n        \"parameters\": [],\r\n        \"responses\": {\r\n          \"200\": {\r\n            \"description\": \"successful operation\",\r\n            \"schema\": {\r\n              \"type\": \"string\"\r\n            },\r\n            \"headers\": {}\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+      "url": "http://localhost:8080/rest/swagger.json",
+      "output": null
+    }
+  },
+  "codeGenerators": {
+    "swaggerToTypeScriptClient": {
+      "className": "{controller}Client",
+      "moduleName": "",
+      "namespace": "",
+      "typeScriptVersion": 2.0,
+      "template": "Angular",
+      "promiseType": "Promise",
+      "dateTimeType": "Date",
+      "nullValue": "Undefined",
+      "generateClientClasses": true,
+      "generateClientInterfaces": false,
+      "generateOptionalParameters": false,
+      "wrapDtoExceptions": false,
+      "useTransformOptionsMethod": false,
+      "useTransformResultMethod": false,
+      "generateDtoTypes": true,
+      "operationGenerationMode": "MultipleClientsFromOperationId",
+      "markOptionalProperties": true,
+      "generateCloneMethod": false,
+      "typeStyle": "Class",
+      "generateDefaultValues": true,
+      "excludedTypeNames": [],
+      "handleReferences": false,
+      "generateConstructorInterface": true,
+      "importRequiredTypes": true,
+      "baseUrlTokenName": "API_BASE_URL",
+      "output": "api-client.ts"
+    }
+  }
+}
