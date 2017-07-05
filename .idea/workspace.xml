@@ -6,13 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef81f06-3516-4a29-bfc0-e19b763be20f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="2ef81f06-3516-4a29-bfc0-e19b763be20f" name="Default" comment="check in missing files">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jersey-rest-test03.iml" afterPath="$PROJECT_DIR$/jersey-rest-test03.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +24,7 @@
       <file leaf-file-name="SwaggerBootstrap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/technicalmedia/SwaggerBootstrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="725">
               <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,8 +98,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="475" column="56" lean-forward="false" selection-start-line="475" selection-start-column="56" selection-end-line="475" selection-end-column="56" />
+            <state relative-caret-position="377">
+              <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -183,6 +182,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/src/main/spa/node_modules" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="797" />
     <option name="y" value="117" />
@@ -205,8 +207,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,18 +223,10 @@
               <item name="jersey-rest-test03" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jersey-rest-test03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jersey-rest-test03" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,10 +235,10 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/swagger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/workspace.xml" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="typescript-compiler-editor-notification" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -434,7 +430,8 @@
       <workItem from="1499164045151" duration="1718000" />
       <workItem from="1499165837494" duration="1453000" />
       <workItem from="1499245434268" duration="1061000" />
-      <workItem from="1499246505890" duration="450000" />
+      <workItem from="1499246505890" duration="923000" />
+      <workItem from="1499247434752" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="lots of stuff working">
       <created>1498169453506</created>
@@ -492,14 +489,22 @@
       <option name="project" value="LOCAL" />
       <updated>1499246690752</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="check in missing files">
+      <created>1499246968629</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1499246968629</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65407000" />
+    <option name="totallyTimeSpent" value="66324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2114" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -515,7 +520,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23567708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23567708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -915,7 +920,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/technicalmedia/SwaggerBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="725">
           <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -976,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,14 +988,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="475" column="56" lean-forward="false" selection-start-line="475" selection-start-column="56" selection-end-line="475" selection-end-column="56" />
+        <state relative-caret-position="377">
+          <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
           <folding />
         </state>
       </provider>
